@@ -72,7 +72,8 @@ init() {
     // Close the modal when the close button is clicked
 closeModal() {
   document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('offer-test-popup__close') || e.target.classList.contains('offer-test-popup__overlay')) {
+   // if (e.target.classList.contains('offer-test-popup__close') || e.target.classList.contains('offer-test-popup__overlay')) {
+    if (e.target.classList.contains('offer-test-popup__close')) {   
       const modal = document.querySelector('.offer-test-popup__overlay');
       if (modal) {
         modal.style.display = 'none'; // Optional: smooth transition effect can be added here
