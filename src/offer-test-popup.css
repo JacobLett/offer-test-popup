@@ -1,0 +1,138 @@
+/* General styles for the modal overlay */
+.offer-test-popup__overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+/* Modal window styles */
+.offer-test-popup__modal {
+    
+  background-color: #1c4d31; /* Dark green background */
+  color: #ffffff; /* White text */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content within the modal */
+}
+
+/* Close button styles */
+.offer-test-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Quote styling */
+.offer-test-popup__quote {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.5;
+  position: relative;
+  margin: 0 3rem 0 2rem;
+  
+}
+
+/* Large quote marks around the quote */
+.offer-test-popup__quote::before,
+.offer-test-popup__quote::after {
+  content: '“'; /* Left quote mark */
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  opacity: 0.8;
+  font-weight:bold;
+  font-family: serif;
+}
+
+.offer-test-popup__quote::after {
+  content: '”'; /* Right quote mark */
+  right: -30px;  /* Adjust the right positioning */
+  top: -15px;
+}
+
+.offer-test-popup__quote::before {
+  left: -30px; /* Adjust the left positioning */
+  top: -15px;
+}
+
+/* Quote message */
+.offer-test-popup__message {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 30px;
+  line-height:1.2;
+  font-weight:bold;
+}
+
+/* Learn More button style */
+.offer-test-popup__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2d703b; /* Slightly lighter green */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on the button */
+.offer-test-popup__button:hover {
+  background-color: #1f5828;
+}
+
+/* Link style for the entire quote */
+a.offer-test-popup__quote-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .offer-test-popup__modal {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .offer-test-popup__quote {
+    font-size: 20px;
+  }
+
+  .offer-test-popup__quote::before,
+  .offer-test-popup__quote::after {
+    font-size: 40px;
+  }
+
+  .offer-test-popup__message {
+    font-size: 18px;
+  }
+
+  .offer-test-popup__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
