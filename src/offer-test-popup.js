@@ -13,10 +13,11 @@ class OfferTestPopup {
       this.init();
     }
   
-    init() {
-      this.checkCookie();
-      this.showModalAfterDelay();
-    }
+init() {
+  this.checkCookie();
+  this.showModalAfterDelay();
+  this.closeModal(); // Add this line to activate the close button functionality
+}
   
     // Check if the cookie is set to avoid showing the modal again
     checkCookie() {
