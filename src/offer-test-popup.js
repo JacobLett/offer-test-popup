@@ -45,7 +45,7 @@ init() {
         const modalHTML = `
           <div class="offer-test-popup__overlay">
             <div class="offer-test-popup__modal">
-              <span class="offer-test-popup__close">&times;</span>
+              <a href="#?offertest=close" class="offer-test-popup__close">&times;</a>
               <a href="${quoteData.url}" class="offer-test-popup__quote-link" target="_blank">
               <div class="offer-test-popup__quote">
                   <p class="offer-test-popup__message">${quoteData.text}</p>
