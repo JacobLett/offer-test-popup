@@ -114,7 +114,6 @@ a.offer-test-popup__quote-link {
 /* Responsive styles */
 @media (max-width: 768px) {
   .offer-test-popup__modal {
-    padding: 20px;
     width: 90%;
   }
 
